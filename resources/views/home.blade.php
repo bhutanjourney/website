@@ -1,17 +1,5 @@
-@extends('layouts.admin.app')
+@extends('layouts.master.master')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, cupiditate, numquam. Libero esse odio, laborum, fugiat quis facilis error distinctio provident porro inventore ullam atque vel aut, omnis veritatis dicta.
 @endsection
