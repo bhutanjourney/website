@@ -21,3 +21,9 @@ Route::get('/home', 'HomeController@index');
 Route::get('/change',function(){
 	return view('auth.passwords.change');
 })->name('change');
+
+
+//route for the menu managements
+Route::get('/admin/menu/view',function(){
+	return view('layouts.master.menu.view');
+})->name('view_menu');

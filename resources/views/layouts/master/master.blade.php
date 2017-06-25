@@ -18,7 +18,9 @@
 
     {{-- customised stylesheets --}}
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-
+    
+    <!-- Datables Style -->
+      <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
 
     {{-- bootstrap themes --}}
     <!-- Latest compiled and minified CSS -->
@@ -120,7 +122,12 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
-    
+
+    {{-- JS for DataTables --}}
+
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
