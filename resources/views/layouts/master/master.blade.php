@@ -98,8 +98,24 @@
                 </div>
             </div>
         </nav>
+        <div class="container">
+            <div class="row">
+            {{-- panel for the menu --}}
+                <div class="col-md-3">
+                    @include('layouts.master.includes.sidebar')
+                </div>
+                <div class="col-md-9">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Dashboard</div>
 
-        @yield('content')
+                        <div class="panel-body">
+                            {{-- contents --}}
+                         @yield('content')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
