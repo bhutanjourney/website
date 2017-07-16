@@ -24,6 +24,27 @@ Route::get('/change',function(){
 
 
 //route for the menu managements
-Route::get('/admin/menu/view',function(){
-	return view('layouts.master.menu.view');
-})->name('view_menu');
+
+// displays the view of menu managements
+Route::get('/admin/menu/view',[
+	'uses'=>'MenuController@getIndex',
+	'as'=>'view_menu']);
+
+//add menu to the database
+Route::post('/admin/menu/add',[
+		'uses' => 'MenuController@postAddMenu',
+		'as'=> 'add_menu'
+	]);
+
+//edit menu
+Route::post('/admin/menu/edit',[
+		'uses'=>'MenuController@editMenu',
+		'as'=>'edit_menu'
+	]);
+
+//delete menu
+Route::get('/admin/menu/delete/{id}',[
+		'uses'=>'MenuController@deleteMenu',
+		'as'=>'delete_menu'
+	]);
+
