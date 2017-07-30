@@ -15,7 +15,7 @@ class MenuController extends Controller
     // function to view the menu page
     public function getIndex(){
     	$menu = Menu::all();
-    	return view('layouts.master.menu.view',['menus'=>$menu]);
+    	return view('admin.menu.view',['menus'=>$menu]);
     }
     // function to add the menu
     public function postAddMenu(Request $request){

@@ -16,7 +16,7 @@
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
+                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="{{route('view_header_image')}}">Header Image</a>
                                         </td>
                                     </tr>
                                     <tr>

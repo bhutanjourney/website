@@ -11,12 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+// routes for the admin
 Auth::routes();
-
 Route::get('/home', 'HomeController@index');
 Route::get('/change',function(){
 	return view('auth.passwords.change');
@@ -47,4 +44,26 @@ Route::get('/admin/menu/delete/{id}',[
 		'uses'=>'MenuController@deleteMenu',
 		'as'=>'delete_menu'
 	]);
+
+
+// routes for header image
+Route::get('admin/header_image/view',[
+	'uses'=>'HeaderImageController@getImage',
+	'as'=>'view_header_image'
+	]);
+
+// routes to add header image
+Route::post('admin/header_image/add',[
+	'uses'=>'HeaderImageController@postAddImage',
+	'as'=>'add_header_image'
+	]);
+
+
+
+
+// Routes for the general user
+Route::get('/', function () {
+	$header_image = App\HeaderImage::all();
+    return view('layouts.website.layout',['header_images'=>$header_image]);
+});
 
