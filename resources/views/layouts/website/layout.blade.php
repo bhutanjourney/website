@@ -24,7 +24,7 @@
 
     {{-- bootstrap themes --}}
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -64,20 +64,21 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
+        <div class="container-fluid">
             {{-- header image slider section --}}
             <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 jumbotron">
+                {{-- <div class="col-md-2"></div> --}}
+                <div class="jumbotron">
                     <div class="panel panel-default">
                       <div class="panel-body">
-                      @include('layouts.website.includes.header')
-                      {{-- <img src="{{asset('assets/images/header1.jpg')}}" alt="Image of Punakha" height="300px" width="100%"> --}}
+                        @include('layouts.website.includes.header')
                       </div>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
             </div>
+        </div>
+        <div class="container">
             {{-- Menu Section --}}
             <div class="row">
                 
@@ -86,7 +87,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" style="text-align: center"><h2>FEATURE TOURS</h2></div>
                 <div class="panel-body">
-                    <div class="row">
+                    <div class="row equal">
                         <div class="col-md-3">
                             <div class="thumbnail">
                               <img src="{{asset('assets/images/culture/culture.jpg')}}" alt="Image of culture">
@@ -139,13 +140,13 @@
             <div class="panel panel-default">
                 <div class="panel-heading" style="text-align: center"><h2>OUR TEAM</h2></div>
                 <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-4">
+                    <div class="row equal">
+                        <div class="col-md-4 ">
                             <div class="panel panel-info">
                             <div class="panel-heading" style="text-align: center"><h4>Sonam Chophyel</h4><p>Tour Leader</p></div>
                                 <div class="panel-body">
                                     <div class="thumbnail">
-                                    <img src="{{asset('assets/images/teams/sonam-chogyal.jpg')}}" alt="Image of Sonam Chophyel">
+                                    <img class="img-rounded" src="{{asset('assets/images/teams/sonam-chogyal.jpg')}}" alt="Image of Sonam Chophyel">
                                         <p>Sonam Chophyel is from central Bhutan and a veteran in the Bhutanese tourism industry with an experience of more than 15 years. He is the founder of Bhutan Journeys “Your travel guide to Bhutan” and welcomes everyone to discover the real Bhutan. Chophyel has worked in various capacities in the field of tourism and traveled extensively throughout the country leading groups from all over the world. He aspires and assures to provide quality service and to showcase the best of cultural and natural aspects of Bhutan. His in-depth knowledge on Bhutan and vast experiences is well appreciated by his peers and clients.</p>
                                     </div>
                                 </div>
@@ -156,32 +157,8 @@
                             <div class="panel-heading" style="text-align: center"><h4>Kencho Tenzin</h4><p>Specialized Cultural and Trekking Guide</p></div>
                                 <div class="panel-body">
                                     <div class="thumbnail">
-                                    <img src="{{asset('assets/images/teams/kencho-tenzin.jpg')}}" alt="Image of Kencho Tenzin">
+                                    <img class="img-rounded" src="{{asset('assets/images/teams/kencho-tenzin.jpg')}}" alt="Image of Kencho Tenzin">
                                         <p>Kencho Tenzin started guiding in 2008. He cherishes meeting people from all over the world and has strong passion in various cultures. He is currently pursuing Japanese language course in Tokyo, Japan and is expected to join our team soon.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="panel panel-info">
-                            <div class="panel-heading" style="text-align: center"><h4>Gasey Lhendup</h4><p>Specialized Cultural and Trekking Guide</p></div>
-                                <div class="panel-body">
-                                    <div class="thumbnail">
-                                    <img src="{{asset('assets/images/teams/gasey.jpg')}}" alt="Image of Gasey Lhendup">
-                                        <p>He has worked in Aman Resort (International Luxury hotel) for 6 years in various capacities and has rich experience in the hospitality industry. Gasey joined our team and he now leads the cultural and trekking team. He is much-admired for rendering high class services for the clients.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="panel panel-success">
-                            <div class="panel-heading" style="text-align: center"><h4>Karma Dhendup</h4><p>Specialized Cultural and Trekking Guide</p></div>
-                                <div class="panel-body">
-                                    <div class="thumbnail">
-                                    <img src="{{asset('assets/images/teams/karma-Dendup-photo1.jpg')}}" alt="Image of karma Dendup">
-                                        <p>Mr.Dhendup started guiding in 2006 and has worked for a number of travel companies amassing wealth of experience in the tourism and hospitality industry before joining our team. He leads the cultural and trekking group along with other professional guides.</p>
                                     </div>
                                 </div>
                             </div>
@@ -191,8 +168,32 @@
                             <div class="panel-heading" style="text-align: center"><h4>Tshering Dorji A.K.A Janiman</h4><p>Specialized Trekking Chief</p></div>
                                 <div class="panel-body">
                                     <div class="thumbnail">
-                                    <img src="{{asset('assets/images/teams/tshering-dorji.jpg')}}" alt="Image of Tshering Dorji">
+                                    <img class="img-rounded" src="{{asset('assets/images/teams/tshering-dorji.jpg')}}" alt="Image of Tshering Dorji">
                                         <p>A senior trekking member in the company, Tshering worked with the company ever since its inception. As a chef certified by Tourism Council of Bhutan he has been associated with trekking in Bhutan since 1985 and walked through all the trekking routes in Bhutan. His passion for trekking and his expertise in culinary skills are an added bonus for the group that he leads.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row equal">
+                        <div class="col-md-4">
+                            <div class="panel panel-success">
+                            <div class="panel-heading" style="text-align: center"><h4>Karma Dhendup</h4><p>Specialized Cultural and Trekking Guide</p></div>
+                                <div class="panel-body">
+                                    <div class="thumbnail">
+                                    <img class="img-rounded" src="{{asset('assets/images/teams/karma-Dendup-photo1.jpg')}}" alt="Image of karma Dendup">
+                                        <p>Mr.Dhendup started guiding in 2006 and has worked for a number of travel companies amassing wealth of experience in the tourism and hospitality industry before joining our team. He leads the cultural and trekking group along with other professional guides.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-info">
+                            <div class="panel-heading" style="text-align: center"><h4>Gasey Lhendup</h4><p>Specialized Cultural and Trekking Guide</p></div>
+                                <div class="panel-body">
+                                    <div class="thumbnail">
+                                    <img class="img-rounded" src="{{asset('assets/images/teams/gasey.jpg')}}" alt="Image of Gasey Lhendup">
+                                        <p>He has worked in Aman Resort (International Luxury hotel) for 6 years in various capacities and has rich experience in the hospitality industry. Gasey joined our team and he now leads the cultural and trekking team. He is much-admired for rendering high class services for the clients.</p>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +203,7 @@
                             <div class="panel-heading" style="text-align: center"><h4>Dema Yangchen</h4><p>Operations Manager</p></div>
                                 <div class="panel-body">
                                     <div class="thumbnail">
-                                    <img src="{{asset('assets/images/teams/Dema-Yangchen.jpg')}}" alt="Image of Dema Yangchen">
+                                    <img class="img-rounded" src="{{asset('assets/images/teams/Dema-Yangchen.jpg')}}" alt="Image of Dema Yangchen">
                                         <p>Dema joined Bhutan Journeys in 2010 as an operation executive. She ensures that all the travel aspects go smoothly for our valued customers. She is responsible for nurturing our relationships with hospitality and transport sectors.</p>
                                     </div>
                                 </div>
@@ -215,7 +216,19 @@
                             <div class="panel-heading" style="text-align: center"><h2>Our Partner</h2><h4>Silvia Vizzoni</h4><p>Sales and Business Development</p></div>
                                 <div class="panel-body">
                                     <div class="thumbnail">
-                                    <img src="{{asset('assets/images/teams/silvia_profile.jpg')}}" alt="Image of silvia">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <object data="http://www.bigbluecollection.com/" width="100%" height="300px">
+                                                <embed src="http://www.bigbluecollection.com/" width="100%" height="auto"> </embed>
+                                                Error: Embedded data could not be displayed.
+                                            </object>
+                                            {{-- <iframe src="http://www.bigbluecollection.com/" frameborder="0" width="600" height="400"></iframe> --}}
+                                        </div>
+                                        <div class="col-md-4 thumbnail">
+                                            <img class="img-rounded" src="{{asset('assets/images/teams/silvia_profile.jpg')}}" alt="Image of silvia">
+                                        </div>
+                                    </div>
+                                    
                                         <p>Ms. Sliva Vizzoni is our United Kingdom - based travel associate. After her visit to Bhutan in 2015, she has lot of passion for this country and initiated to promote Bhutan, encouraging people to journey here and establish good relationship with the travel agents abroad. For all information on Bhutan Journeys and its tours please contact her at:</p>
                         
                                          Email: info@bigbluecollection.com <br>
@@ -230,8 +243,11 @@
                 </div>
             </div>
         </div>
+        <div style="text-align:center;">
+        <h6><strong> &copy;<?php  echo date("Y"); echo " BHUTAN JOURNEYS ALL RIGHT RESERVED!";?></strong></h6>
+        </div>
     </div>
-
+    
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 
@@ -241,6 +257,6 @@
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 </body>
 </html>
