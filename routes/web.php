@@ -19,6 +19,9 @@ Route::get('/change',function(){
 	return view('auth.passwords.change');
 })->name('change');
 
+<<<<<<< HEAD
+Route::post('change-password', 'Auth\UpdatePasswordController@update');
+=======
 
 //route for the menu managements
 
@@ -67,3 +70,4 @@ Route::get('/', function () {
     return view('layouts.website.layout',['header_images'=>$header_image]);
 });
 
+>>>>>>> 8ac24fe6a9aa657ff98b53d74028861213760d1a
