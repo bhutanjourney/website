@@ -68,24 +68,31 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
+                  <!--  <a href="{{ url('/login') }}">Login</a>
+                    <a href="{{ url('/register') }}">Register</a> -->
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                 <div class="jumbotron text-center">
+                   <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <a class="navbar-brand" href="#">WebSiteName</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                          <li class="active"><a href="#">Home</a></li>
+                          <li><a href="#">Page 1</a></li>
+                          <li><a href="#">Page 2</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                      </div>
+                </nav>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
         </div>
     </body>
 </html>

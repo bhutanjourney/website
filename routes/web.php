@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index');
 Route::get('/change',function(){
 	return view('auth.passwords.change');
 })->name('change');
+
+Route::post('change-password', 'Auth\UpdatePasswordController@update');
