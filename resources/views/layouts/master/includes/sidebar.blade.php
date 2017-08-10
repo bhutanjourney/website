@@ -1,5 +1,5 @@
-    <div class="panel panel-primary">
-        <div class="panel-heading ">Dashboard<span class="glyphicon glyphicon-th" style="float:right;font-size: 25px;"></span></div>
+<div class="panel panel-primary">
+    <div class="panel-heading ">Dashboard<span class="glyphicon glyphicon-th" style="float:right;font-size: 25px;"></span></div>
         <div class="panel-body">
             {{-- sidebar menu --}}
             <div id="sidebar-wrapper">
@@ -16,12 +16,12 @@
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
+                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="{{route('view_header_image')}}">Header Image</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">News</a>
+                                            <span class=" glyphicon glyphicon-credit-card"></span><a href="{{route('view_menu')}}">Menu</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -135,4 +135,4 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>

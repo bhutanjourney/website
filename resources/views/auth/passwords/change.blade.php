@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Change Your Password</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="#">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
