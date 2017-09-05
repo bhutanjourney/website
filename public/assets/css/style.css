@@ -1,8 +1,15 @@
-.equal, .equal > div[class*='col-'] {
+.equal, 
+.equal > div[class*='col-'] {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     flex:1 1 auto;
+}
+.img-round {
+  border-radius: 5%;
+}
+.back-ground{
+	background-color: #00579F;
 }

@@ -60,12 +60,39 @@ Route::post('admin/header_image/add',[
 	]);
 
 
-
-
 // Routes for the general user
 Route::get('/', function () {
 	$header_image = App\HeaderImage::all();
     return view('layouts.website.layout',['header_images'=>$header_image]);
 });
 
+// Route for page Managements
+
+// Route for culture tour
+Route::get('/tours/culture_tour',[
+		'uses'=>'PageController@getCulture',
+		'as'=>'culture_tour'
+	]);
+Route::get('/tours/culture_tour/experience_bhutan',function(){
+	return view('layouts.website.tours.culture.experience_bhutan');
+})->name('experience_bhutan');
+
+
+// Route for festival tour
+Route::get('/tours/festival_tour',[
+		'uses'=>'PageController@getFestival',
+		'as'=>'festival_tour'
+	]);
+
+// Route for Nature tour
+Route::get('/tours/nature_tour',[
+		'uses'=>'PageController@getNature',
+		'as'=>'nature_tour'
+	]);
+
+// Route for Trekking tour
+Route::get('/tours/trekking_tour',[
+		'uses'=>'PageController@getTrekking',
+		'as'=>'trekking_tour'
+	]);
 
