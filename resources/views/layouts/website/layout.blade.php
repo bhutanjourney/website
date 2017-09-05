@@ -98,7 +98,7 @@
                               <div class="caption">
                                 <h3>CULTURE</h3>
                                 <p>This tour is designed for visitors with limited time but those who have high hopes and aspirations to experience Bhutan in a shortest possible way. The five days and four nights program covers visit to Paro and Thimphu Valleys.</p>
-                                <p style="float:right;"><a href="#" class="btn btn-default" role="button">Read more</a></p>
+                                <p style="float:right;"><a href="{{route('culture_tour')}}" class="btn btn-default" role="button" target="_blank">Read more</a></p>
                                 <div class="clearfix"></div>
                               </div>
                             </div>
@@ -109,7 +109,7 @@
                               <div class="caption">
                                 <h3>FESTIVAL</h3>
                                 <p>The most important festival in Bhutan is known as “Tshechu”. It is a religious festival, celebrated throughout the country, to commemorate the deeds of Guru Rimphoche, the founding saint of Buddhism in the Himalayan regions.</p>
-                                <p style="float:right;"><a href="#" class="btn btn-default" role="button">Read more</a></p>
+                                <p style="float:right;"><a href="{{route('festival_tour')}}" class="btn btn-default" role="button" target="_blank">Read more</a></p>
                                 <div class="clearfix"></div>
                              </div>
                             </div>
@@ -120,7 +120,7 @@
                               <div class="caption">
                                 <h3>NATURE</h3>
                                 <p>Bhutan is one of 10 global centres for environmental conservation because of its amazing diversity of flora and fauna. Bhutan is the leading countries in the world for prioritising the protection of the environment while pursuing developmental activities.</p>
-                                <p style="float:right;"><a href="#" class="btn btn-default" role="button">Read more</a></p>
+                                <p style="float:right;"><a href="{{route('nature_tour')}}" class="btn btn-default" role="button" target="_blank">Read more</a></p>
                                 <div class="clearfix"></div>
                               </div>
                             </div>
@@ -132,7 +132,7 @@
                                 <h3>TREKKING</h3>
                                 <p>Rocky mountains,captivating valleys,winding rivers,sparkling lakes,thick forest and unexplored purity of nature.Towering snow peaks of the  Himalayas, the verdant forests, ensures Bhutan a trekkers’ paradise.</p>
                                 
-                                <p style="float:right;"><a href="#" class="btn btn-default" role="button" style="margin-bottom: 15px;">Read more</a></p>
+                                <p style="float:right;"><a href="{{route('trekking_tour')}}" class="btn btn-default" role="button" style="margin-bottom: 15px;" target="_blank">Read more</a></p>
                                 <div class="clearfix"></div>
                               </div>
                             </div>
@@ -228,8 +228,8 @@
                                             </object>
                                             {{-- <iframe src="http://www.bigbluecollection.com/" frameborder="0" width="600" height="400"></iframe> --}}
                                         </div>
-                                        <div class="col-md-4 thumbnail">
-                                            <img class="img-rounded" src="{{asset('assets/images/teams/silvia_profile.jpg')}}" alt="Image of silvia">
+                                        <div class="col-md-4">
+                                            <img class="img-rounded" src="{{asset('assets/images/teams/silvia_profile.jpg')}}" alt="Image of silvia" width="100%">
                                         </div>
                                     </div>
                                     
@@ -247,9 +247,14 @@
                 </div>
             </div>
         </div>
-        <div style="text-align:center;">
+    </div>
+    {{-- widgets --}}
+    <div class="container-fluid">
+        @include('layouts.website.includes.widgets')
+    </div>
+        {{-- copyright --}}
+    <div style="text-align:center;">
         <h6><strong> &copy;<?php  echo date("Y"); echo " BHUTAN JOURNEYS ALL RIGHT RESERVED!";?></strong></h6>
-        </div>
     </div>
     
     <!-- Scripts -->
