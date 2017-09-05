@@ -247,10 +247,57 @@
                 </div>
             </div>
         </div>
+            <!-- wedgit -->
+            <div class="container-fluid">
+            <div class="panel panel-success">
+        <div class="row">
+         <div class="col-md-4">
+        <div class="panel panel-success">
+                            <div class="panel-heading" style="text-align: center"><h4>CONNECT WITH US</h4></div>
+                                <div class="panel-body">
+                                      <div class="fb-page"
+                                          data-href="https://www.facebook.com/BhutanJourneys/?ref=br_rs" 
+                                          data-width="340"
+                                          data-hide-cover="false"
+                                          data-show-facepile="true"></div>                            
+                                </div>
+                            </div>
+
+        </div>
+         <div class="col-md-4">
+        <div class="panel panel-success">
+                            <div class="panel-heading" style="text-align: center"><h4>CONTACT INFORMATION</h4></div>
+                                <div class="panel-body">
+                                    <div class="thumbnail">
+                                    <img class="img"  src="{{asset('assets/images/widget/logo1.png')}}" alt="logo" height="42" width="42">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+        </div> 
+        <div class="col-md-4">
+        <div class="panel panel-success">
+                            <div class="panel-heading" style="text-align: center"><h4>AFFILATIONS</h4></div>
+                                <div class="panel-body">
+                                    <div class="thumbnail">
+                                    <p style="text-align: justify;">Bhutan Journeys is an official tour operator of Bhutan licensed under the tourism Council of Bhutan, 2014. Bhutan Journeys is also a member of the Association of Bhutanese Tour Operators of Bhutan. </p>
+                                        <img class="img" src="{{asset('assets/images/widget/logoos-1.png')}}" alt="Image of Dema Yangchen">
+                                    </div>
+                                </div>
+                            </div>
+        </div>
+    
+        </div>
+        </div>
+        </div>
+        
+
+        
+
         <div style="text-align:center;">
         <h6><strong> &copy;<?php  echo date("Y"); echo " BHUTAN JOURNEYS ALL RIGHT RESERVED!";?></strong></h6>
         </div>
-    </div>
+    
     
     <!-- Scripts -->
     <script src="/js/app.js"></script>
@@ -261,6 +308,14 @@
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=1553812374863873";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 </body>
 </html>
