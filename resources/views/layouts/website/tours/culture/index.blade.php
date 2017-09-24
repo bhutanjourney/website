@@ -12,36 +12,53 @@ Culture Tour
 							<a href="{{route('experience_bhutan')}}">
 								<img class="img-round" src="{{asset('assets/images/culture/culture.jpg')}}" alt=""  width="300px">
 							</a>
+							<div class="caption">
+								<h5>EXPERIENCE BHUTAN (4 NIGHTS / 5 DAYS)</h5>
+							</div>
 						</div>
 						<div class="col-md-4">
 							<a href="#">
-								<img class="img-round" src="{{asset('assets/images/culture/culture.jpg')}}" alt="" width="300px">
+								<img class="img-round" src="{{asset('assets/images/culture/essence-of-bhtuan.jpg')}}" alt="" width="300px">
 							</a>
+							<div class="caption">
+								<h5>ESSENCE OF BHUTAN (6 NIGHTS / 7 DAYS)</h5>
+							</div>
 						</div>
 						<div class="col-md-4">
 							<a href="#">
-								<img class="img-round" src="{{asset('assets/images/culture/culture.jpg')}}" alt="" width="300px">
+								<img class="img-round" src="{{asset('assets/images/culture/spirit.jpg')}}" alt="" width="300px">
 							</a>
+							<div class="caption">
+								<h5>SPIRITUAL QUEST OF BHUTAN (9 NIGHTS / 10 DAYS)</h5>
+							</div>
 						</div>
 					</div>
-					<br>
 					<br>
 					<br>
 					<div class="row">
 						<div class="col-md-4">
 							<a href="#">
-								<img class="img-round" src="{{asset('assets/images/culture/culture.jpg')}}" alt=""  width="300px">
+								<img class="img-round" src="{{asset('assets/images/culture/spiritual-quest.jpg')}}" alt=""  width="300px">
 							</a>
+							<div class="caption">
+								<h5>THE LEGEND OF CENTRAL BHUTAN (11 NIGHTS / 12 DAYS)</h5>
+							</div>
 						</div>
 						<div class="col-md-4">
 							<a href="#">
-								<img class="img-round" src="{{asset('assets/images/culture/culture.jpg')}}" alt="" width="300px">
+								<img class="img-round" src="{{asset('assets/images/culture/culutural-prelude.jpg')}}" alt="" width="300px">
 							</a>
+							<div class="caption">
+								<h5>CULTURAL PRELUDE TO BHUTAN (13 NIGHTS / 14 DAYS)</h5>
+							</div>
 						</div>
 						<div class="col-md-4">
 							<a href="#">
-								<img class="img-round" src="{{asset('assets/images/culture/culture.jpg')}}" alt="" width="300px">
+								<img class="img-round" src="{{asset('assets/images/culture/journey-across-bhutan.jpg')}}" alt="" width="300px">
 							</a>
+							<div class="caption">
+								<h5>JOURNEY ACROSS BHUTAN (14 NIGHTS / 15 DAYS)</h5>
+							</div>
 						</div>
 					</div>
 				</div>

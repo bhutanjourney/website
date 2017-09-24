@@ -43,22 +43,16 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{asset('assets/images/logo.png')}}" alt="logo">
-                    </a>
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-
-                </div>
-            </div>
-        </nav>
+        {{-- menu bar --}}
+        <div>
+            @include('layouts.website.includes.navbar')
+        </div>
         <div class="container">
             @yield('content')
+        </div>
+        {{-- widgets --}}
+        <div class="container-fluid">
+            @include('layouts.website.includes.widgets')
         </div>
         <div style="text-align:center;">
         <h6><strong> &copy;<?php  echo date("Y"); echo " BHUTAN JOURNEYS ALL RIGHT RESERVED!";?></strong></h6>

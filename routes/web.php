@@ -64,7 +64,11 @@ Route::post('admin/header_image/add',[
 Route::get('/', function () {
 	$header_image = App\HeaderImage::all();
     return view('layouts.website.layout',['header_images'=>$header_image]);
-});
+})->name('home');
+
+Route::get('/about_us',function () {
+    return view('layouts.website.about_us');
+})->name('about_us');
 
 // Route for page Managements
 

@@ -1,7 +1,5 @@
 @extends('layouts.website.page_layout')
-@section('title')
-Culture Tour
-@endsection
+
 @section('content')
 	<div class="container">
 		<div class="panel panel-info">

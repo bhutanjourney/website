@@ -1,5 +1,8 @@
 @extends('layouts.website.tours.individual_page_layout')
 <div class="container">
+	@section('title')
+		Culture Tour
+	@endsection
 	@section('heading')
 		<p>EXPERIENCE BHUTAN</p>
 	@endsection
@@ -7,7 +10,7 @@
 		<div class="col-md-8">
 			<img src="{{asset('assets/images/culture/culture.jpg')}}" alt="culture tour" width="100%">
 			<p>This tour is designed for visitors with limited time but those who have high hopes and aspirations to experience Bhutan in a shortest possible way. The five days and four nights program covers visit to Paro and Thimphu Valleys. Highlight includes: Sacred Buddhist sites, beautiful landscape, villages, massive fortresses and meeting people.</p>
-			<a  href="" class="btn btn-warning" style="float:right;">BOOK NOW!</a >
+			<button class="btn btn-warning" style="float:right;" data-toggle="modal" data-target="#individual_book">Book Now!</button>
 			{{-- Tabs --}}
 			<div>
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -170,6 +173,48 @@
 				<h3>TREKKING</h3>
 				<a href="{{route('trekking_tour')}}" target="_blank"><img src="{{asset('assets/images/trekking/trekking.jpg')}}" alt="Trekking Image" width="90%"></a>
 			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="individual_book" tabindex="-1" role="dialog" aria-labelledby="BookIndividualTour" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h3 class="modal-title" id="exampleModalLabel">Plan Your Trip!</h3>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form action="#">
+		        	<div class="form-group">
+		        		<label for="name">Name<span style="color: red;">*</span></label>
+		        		<input type="text" class="form-control" name="name" required>
+		        	</div>
+		        	<div class="form-group">
+		        		<label for="email">Email Address<span style="color: red;">*</span></label>
+		        		<input type="text" class="form-control" name="email" required>
+		        	</div>
+		        	<div class="form-group">
+		        		<label for="country">Country<span style="color: red;">*</span></label>
+		        		<input type="text" class="form-control" name="country" required>
+		        	</div>
+		        	<div class="form-group">
+		        		<label for="heads">No of Heads<span style="color: red;">*</span></label>
+		        		<input type="text" class="form-control" name="heads" required>
+		        	</div>
+		        	<div class="form-group">
+		        		<label for="description">Any Requirements!</label>
+		        		<textarea name="description" class="form-control" cols="30" rows="5"></textarea>
+		        	</div>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 	@endsection
 </div>

@@ -45,29 +45,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <!-- Branding Image -->
-                    {{-- <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{asset('assets/images/logo.png')}}" alt="">
-                    </a> --}}
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-
-                </div>
-            </div>
-        </nav>
+        {{-- menu bar --}}
+        <div>
+            @include('layouts.website.includes.navbar')
+        </div>
         <div class="container-fluid">
             {{-- header image slider section --}}
             <div class="row">
