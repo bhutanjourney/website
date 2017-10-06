@@ -4,13 +4,13 @@
 		Culture Tour
 	@endsection
 	@section('heading')
-		<?php $tour_title = "EXPERIENCE BHUTAN";?>
+		<?php $tour_title = "ESSENCE OF BHUTAN";?>
 		<p>{{$tour_title}}</p>
 	@endsection
 	@section('page_content')
 		<div class="col-md-8">
-			<img src="{{asset('assets/images/culture/culture.jpg')}}" alt="culture tour" width="100%">
-			<p>This tour is designed for visitors with limited time but those who have high hopes and aspirations to experience Bhutan in a shortest possible way. The five days and four nights program covers visit to Paro and Thimphu Valleys. Highlight includes: Sacred Buddhist sites, beautiful landscape, villages, massive fortresses and meeting people.</p>
+			<img src="{{asset('assets/images/culture/essence-of-bhtuan.jpg')}}" alt="culture tour" width="100%">
+			<p>This tour covers the western Bhutanese grandeur of Paro,Thimphu, Punakha and Wangdue valleys. It is a gentle pace 7 days trip enabling one to experience the captivating sights and exhilarating hikes. Highlight includes: Sacred Buddhist sites, beautiful landscape, villages, massive fortresses and meeting people.</p>
 			<button class="btn btn-warning" style="float:right;" data-toggle="modal" data-target="#individual_book">Book Now!</button>
 			{{-- Tabs --}}
 			<div>
@@ -45,16 +45,16 @@
 			  						</thead>
 			  						<tbody>
 			  							<tr>
-			  								<td>USD $ 1203 per person</td>
-			  								<td>USD $ 1003 per person</td>
+			  								<td>USD $ 1783 per person</td>
+			  								<td>USD $ 1483 per person</td>
 			  							</tr>
 			  							<tr>
-			  								<td>USD $ 1163 per pax for 2 person</td>
-			  								<td>USD $ 963 per pax for 2 person</td>
+			  								<td>USD $ 1723 per pax for 2 person</td>
+			  								<td>USD $ 1423 per pax for 2 person</td>
 			  							</tr>
 			  							<tr>
-			  								<td>USD $ 1043 per pax for 3 person and above</td>
-			  								<td>USD $ 843 per pax for 3 person and above</td>
+			  								<td>USD $ 1543 per pax for 3 person and above</td>
+			  								<td>USD $ 1243 per pax for 3 person and above</td>
 			  							</tr>
 			  						</tbody>
 			  					</table>
@@ -125,14 +125,14 @@
 			  		<div class="panel panel-info">
 			  			<div class="panel-heading">
 			  				<div class="panel-title">
-			  					<a href="#day4" data-toggle="collapse" data-parent="accordion">Day 4 [Paro]</a>
+			  					<a href="#day4" data-toggle="collapse" data-parent="accordion">Day 4 [Punakha]</a>
 			  				</div>
 			  			</div>
 			  			<div class="panel-collapse collapse" id="day4">
 			  				<div class="panel-body">
 			  					<ul>
-			  						<li>Excursion hike to Taktshang (Tiger Nest) monestary</li>
-			  						<li>Fare well dinner</li>
+			  						<li>Visit PunakhaDzong</li>
+			  						<li>KhamsumkulleyChorten</li>
 			  					</ul>
 			  				</div>
 			  			</div>
@@ -140,10 +140,41 @@
 			  		<div class="panel panel-info">
 			  			<div class="panel-heading">
 			  				<div class="panel-title">
-			  					<a href="#day5" data-toggle="collapse" data-parent="accordion">Day 5 [Departure]</a>
+			  					<a href="#day5" data-toggle="collapse" data-parent="accordion">Day 5 [Punakha-Paro]</a>
 			  				</div>
 			  			</div>
 			  			<div class="panel-collapse collapse" id="day5">
+			  				<div class="panel-body">
+			  					<ul>
+			  						<li>Drive to Paro</li>
+			  						<li>Dochuala pass</li>
+			  						<li>Simtokha Dzong</li>
+			  						<li>Iron Chain Bridge</li>
+			  					</ul>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="panel panel-info">
+			  			<div class="panel-heading">
+			  				<div class="panel-title">
+			  					<a href="#day6" data-toggle="collapse" data-parent="accordion">Day 6 [Paro]</a>
+			  				</div>
+			  			</div>
+			  			<div class="panel-collapse collapse" id="day6">
+			  				<div class="panel-body">
+			  					<ul>
+			  						<li>Excursion hike to Taktshang (Tiger Nest) monastery</li>
+			  					</ul>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="panel panel-info">
+			  			<div class="panel-heading">
+			  				<div class="panel-title">
+			  					<a href="#day7" data-toggle="collapse" data-parent="accordion">Day 7 [Departure]</a>
+			  				</div>
+			  			</div>
+			  			<div class="panel-collapse collapse" id="day7">
 			  				<div class="panel-body">
 			  					<ul>
 			  						<li>Drive to airport for your destination flight</li>

@@ -9,7 +9,7 @@ Culture Tour
 	            <div class="panel-body">
 					<div class="row">
 						<div class="col-md-4">
-							<a href="{{route('experience_bhutan')}}">
+							<a href="{{route('experience_bhutan')}}" target="_blank">
 								<img class="img-round" src="{{asset('assets/images/culture/culture.jpg')}}" alt=""  width="300px">
 							</a>
 							<div class="caption">
@@ -17,7 +17,7 @@ Culture Tour
 							</div>
 						</div>
 						<div class="col-md-4">
-							<a href="#">
+							<a href="{{route('essence_of_bhutan')}}" target="_blank">
 								<img class="img-round" src="{{asset('assets/images/culture/essence-of-bhtuan.jpg')}}" alt="" width="300px">
 							</a>
 							<div class="caption">
@@ -25,7 +25,7 @@ Culture Tour
 							</div>
 						</div>
 						<div class="col-md-4">
-							<a href="#">
+							<a href="{{route('spiritual_quest_of_bhutan')}}" target="_blank">
 								<img class="img-round" src="{{asset('assets/images/culture/spirit.jpg')}}" alt="" width="300px">
 							</a>
 							<div class="caption">
@@ -37,7 +37,7 @@ Culture Tour
 					<br>
 					<div class="row">
 						<div class="col-md-4">
-							<a href="#">
+							<a href="{{route('legend_of_central_bhutan')}}" target="_blank">
 								<img class="img-round" src="{{asset('assets/images/culture/spiritual-quest.jpg')}}" alt=""  width="300px">
 							</a>
 							<div class="caption">
@@ -45,7 +45,7 @@ Culture Tour
 							</div>
 						</div>
 						<div class="col-md-4">
-							<a href="#">
+							<a href="{{route('cultural_prelude_to_bhutan')}}" target="_blank">
 								<img class="img-round" src="{{asset('assets/images/culture/culutural-prelude.jpg')}}" alt="" width="300px">
 							</a>
 							<div class="caption">
@@ -53,7 +53,7 @@ Culture Tour
 							</div>
 						</div>
 						<div class="col-md-4">
-							<a href="#">
+							<a href="{{route('journey_across_bhutan')}}" target="_blank">
 								<img class="img-round" src="{{asset('assets/images/culture/journey-across-bhutan.jpg')}}" alt="" width="300px">
 							</a>
 							<div class="caption">

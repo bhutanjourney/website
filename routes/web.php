@@ -81,6 +81,26 @@ Route::get('/tours/culture_tour/experience_bhutan',function(){
 	return view('layouts.website.tours.culture.experience_bhutan');
 })->name('experience_bhutan');
 
+Route::get('/tours/culture_tour/essence_of_bhutan',function(){
+	return view('layouts.website.tours.culture.essence_of_bhutan');
+})->name('essence_of_bhutan');
+
+Route::get('/tours/culture_tour/spiritual_quest_of_bhutan',function(){
+	return view('layouts.website.tours.culture.spiritual_quest_of_bhutan');
+})->name('spiritual_quest_of_bhutan');
+
+Route::get('/tours/culture_tour/legend_of_central_bhutan',function(){
+	return view('layouts.website.tours.culture.legend_of_central_bhutan');
+})->name('legend_of_central_bhutan');
+
+Route::get('/tours/culture_tour/cultural_prelude_to_bhutan',function(){
+	return view('layouts.website.tours.culture.cultural_prelude_to_bhutan');
+})->name('cultural_prelude_to_bhutan');
+
+Route::get('/tours/culture_tour/journey_across_bhutan',function(){
+	return view('layouts.website.tours.culture.journey_across_bhutan');
+})->name('journey_across_bhutan');
+
 
 // Route for festival tour
 Route::get('/tours/festival_tour',[

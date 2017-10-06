@@ -14,6 +14,14 @@
 			<p>
 				Discover Bhutan with Bhutan Journeys – assuring you of the experience of a lifetime.
 			</p>
+			<div class="col-md-6">
+				<h3>NATURE</h3>
+				<a href="{{route('nature_tour')}}" target="_blank"><img src="{{asset('assets/images/nature/nature.jpg')}}" alt="Nature Image" width="100%" height="150px"></a>
+			</div>
+			<div class="col-md-6">
+				<h3>TREKKING</h3>
+				<a href="{{route('trekking_tour')}}" target="_blank"><img src="{{asset('assets/images/trekking/trekking.jpg')}}" alt="Trekking Image" width="100%" height="150px"></a>
+			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="row">
@@ -26,14 +34,7 @@
 				<h3>FESTIVAL</h3>
 				<a href="{{route('festival_tour')}}" target="_blank"><img src="{{asset('assets/images/festival/festival.jpg')}}" alt="Festival Image" width="90%"></a>
 			</div>
-			<div class="row">
-				<h3>NATURE</h3>
-				<a href="{{route('nature_tour')}}" target="_blank"><img src="{{asset('assets/images/nature/nature.jpg')}}" alt="Nature Image" width="90%"></a>
-			</div>
-			<div class="row">
-				<h3>TREKKING</h3>
-				<a href="{{route('trekking_tour')}}" target="_blank"><img src="{{asset('assets/images/trekking/trekking.jpg')}}" alt="Trekking Image" width="90%"></a>
-			</div>
+			
 		</div>
 
 		<!-- Modal -->
